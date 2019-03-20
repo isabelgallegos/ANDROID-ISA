@@ -1,0 +1,42 @@
+03-20 12:36:00.905 767-767/com.example.ejemplo_login E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.example.ejemplo_login, PID: 767
+    java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.example.ejemplo_login/com.example.ejemplo_login.MainActivity}: java.lang.ClassNotFoundException: Didn't find class "com.example.ejemplo_login.MainActivity" on path: DexPathList[[zip file "/data/app/com.example.ejemplo_login-2/base.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_0_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_1_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_2_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_5_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_6_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_8_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_9_apk.apk"],nativeLibraryDirectories=[/data/app/com.example.ejemplo_login-2/lib/arm64, /vendor/lib64, /system/lib64]]
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2540)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2720)
+        at android.app.ActivityThread.access$900(ActivityThread.java:196)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1538)
+        at android.os.Handler.dispatchMessage(Handler.java:111)
+        at android.os.Looper.loop(Looper.java:210)
+        at android.app.ActivityThread.main(ActivityThread.java:5988)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:852)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:742)
+     Caused by: java.lang.ClassNotFoundException: Didn't find class "com.example.ejemplo_login.MainActivity" on path: DexPathList[[zip file "/data/app/com.example.ejemplo_login-2/base.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_0_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_1_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_2_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_5_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_6_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_8_apk.apk", zip file "/data/app/com.example.ejemplo_login-2/split_lib_slice_9_apk.apk"],nativeLibraryDirectories=[/data/app/com.example.ejemplo_login-2/lib/arm64, /vendor/lib64, /system/lib64]]
+        at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+        at android.app.Instrumentation.newActivity(Instrumentation.java:1075)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2530)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2720) 
+        at android.app.ActivityThread.access$900(ActivityThread.java:196) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1538) 
+        at android.os.Handler.dispatchMessage(Handler.java:111) 
+        at android.os.Looper.loop(Looper.java:210) 
+        at android.app.ActivityThread.main(ActivityThread.java:5988) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:852) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:742) 
+    	Suppressed: java.lang.NoClassDefFoundError: com.example.ejemplo_login.MainActivity
+        at dalvik.system.DexFile.defineClassNative(Native Method)
+        at dalvik.system.DexFile.defineClass(DexFile.java:230)
+        at dalvik.system.DexFile.loadClassBinaryName(DexFile.java:223)
+        at dalvik.system.DexPathList.findClass(DexPathList.java:343)
+        at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:54)
+        		... 13 more
+    	Suppressed: java.lang.ClassNotFoundException: com.example.ejemplo_login.MainActivity
+        at java.lang.Class.classForName(Native Method)
+        at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+        at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+        		... 12 more
+     Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available

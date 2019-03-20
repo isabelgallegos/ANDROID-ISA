@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String enviarPost (String usuario, String contra) {
-        String parametros="Usuario"+usuario+"&contra="+contra;
+        String parametros="Usuario="+usuario+"&contra="+contra;
         HttpURLConnection conection=null;
         String respuesta="";
         try {
